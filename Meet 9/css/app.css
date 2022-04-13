@@ -1,0 +1,53 @@
+main {
+    padding: 20px;
+}
+
+header{
+    border: 1px solid #eeeeee;
+    padding: 30px;
+}
+header h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+nav{
+    margin: 10px 0;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #bbbb88;
+    border-radius: 5px 0;
+    transition: ease 0.2s all;
+}
+nav ul li:hover{
+    background-color: #d61919;
+    border-radius: 0 5px;
+    color: white;
+    cursor: pointer;
+}
+
+
+#gallary  {
+   border: 2px solid #aaa;
+   border-radius: 30px;
+   padding: 30px;
+}
+
+#gallary h4{
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+#gallary .category ul li {
+    display: inline-block;
+}
+
+#gallary .category ul li img{
+    width: 50px;
+    height: 30px;
+}

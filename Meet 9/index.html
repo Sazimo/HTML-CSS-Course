@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="./js/app.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1> گالری عکس</h1>
+        </header>
+        <nav>
+            <ul>
+                <li onclick="showCategory('nature')">عکس طبیعت</li>
+                <li onclick="showCategory('technology')">عکس فناوری</li>
+            </ul>
+        </nav>
+        <section id="gallary">
+            <div id="technology" class="category">
+                <h4>عکس تکنولوژی</h4>
+                <ul>
+                    <li><img src="./images/technology/1.jpg" alt=""></li>
+                    <li><img src="./images/technology/2.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div id="nature" class="category">
+                <h4>عکس طبیعت</h4>
+                <ul>
+                    <li><img src="./images/nature/1.jpg" alt=""></li>
+                    <li><img src="./images/nature/2.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.getElementById("technology").style.display = "none";
+    </script>
+</body>
+
+</html>
