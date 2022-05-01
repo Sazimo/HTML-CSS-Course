@@ -1,0 +1,90 @@
+main {
+    padding: 20px;
+}
+
+header{
+    border: 1px solid #eeeeee;
+    padding: 30px;
+}
+header h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+nav{
+    margin: 10px 0;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 30px 5px 10px;
+    background-color: #bbbb88;
+    border-radius: 5px 0;
+    transition: cubic-bezier(0, 1.42, 0.76, 1.48) 1s all;
+}
+nav ul li:hover{
+    background-color: #d61919;
+    border-radius: 0 5px;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px 5px 30px;
+}
+nav ul li.active{
+    background-color: #2933bd;
+    border-radius: 0 5px;
+    color: white;
+    cursor: pointer;
+}
+
+
+#gallary  {
+   border: 2px solid #aaa;
+   border-radius: 30px;
+   padding: 30px;
+}
+
+#gallary h4{
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+#gallary .category ul li {
+    display: inline-block;
+}
+
+#gallary .category ul li img{
+    width: 50px;
+    height: 30px;
+}
+
+
+
+
+/* animation sample */
+
+@keyframes example {
+    0%  {
+            background-color: red;
+            padding: 200px;
+        }
+    50%  {
+            background-color: yellow;
+            padding: 100px;
+        }
+    100%  {
+            background-color: green;
+            padding: 200px;
+        }
+  }
+  
+  /* The element to apply the animation to */
+  header {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }

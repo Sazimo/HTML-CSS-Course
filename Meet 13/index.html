@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+    <!-- <button onclick="doSum(5,4)">DoSum</button> -->
+    <main>
+        <header>
+            <h1> گالری عکس</h1>
+        </header>
+        <button data-category="*">All</button>
+        <button data-category="technology">Technology</button>
+        <button data-category="sport">sport</button>
+        <button data-category="nature">nature</button>
+        <button data-category="cars">cars</button>
+        <nav>
+            <ul>
+                <li id="link-*" class="active" onclick="showCategory('*')">همه عکس ها</li>
+                <li id="link-nature" onclick="showCategory('nature')">عکس طبیعت</li>
+                <li id="link-technology" onclick="showCategory('technology')">عکس فناوری</li>
+                <li id="link-sport" onclick="showCategory('sport')">عکس ورزشی</li>
+                <li id="link-cars" onclick="showCategory('cars')">عکس ماشین ها</li>
+            </ul>
+        </nav>
+        <section id="gallary">
+            <div id="technology" class="category">
+                <h4>عکس تکنولوژی</h4>
+                <ul>
+                    <li><img src="./images/technology/1.jpg" alt=""></li>
+                    <li><img src="./images/technology/2.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div id="nature" class="category">
+                <h4>عکس طبیعت</h4>
+                <ul>
+                    <li><img src="./images/nature/1.jpg" alt=""></li>
+                    <li><img src="./images/nature/2.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div id="sport" class="category">
+                <h4>عکس ورزشی</h4>
+                <ul>
+                    <li><img src="./images/nature/1.jpg" alt=""></li>
+                    <li><img src="./images/nature/2.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div id="cars" class="category">
+                <h4>عکس ماشین ها</h4>
+                <ul>
+                    <li><img src="./images/nature/1.jpg" alt=""></li>
+                    <li><img src="./images/nature/2.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
